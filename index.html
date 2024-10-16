@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/3cbcb0a7ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <h2>I'm Moses <span>Joseph</span> a, <br>Photographer From Niger State Nigeria.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Esse ex nam quam unde aliquid labore praesentium illum eius voluptatem, error doloribus delectus porro ipsa libero. <br> Eligendi aut perferendis magni est.</p>
+            </div>
+        </div>
+    </div>
+<!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about me.jpg" alt="owener">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quibusdam, ex vel nisi, illo iure quasi fugiat perferendis optio doloremque iste tenetur odio excepturi sunt. Reiciendis beatae quae necessitatibus maxime!
+                       Mollitia atque voluptatibus labore obcaecati, officia, provident rerum iste sunt eius illum dolorem!
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illo est deleniti veritatis, a necessitatibus, odio mollitia id aliquid sit fugit blanditiis? Commodi ut, aliquam tempora iste reprehenderit magni veritatis.
+                       Est ea nulla, qui dicta provident odit aut perferendis?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Photography</span><br>Indoor and Outdoor Photoshoot.</li>
+                            <li><span>Videography and Editing</span><br>Event coverage and Video editing.</li>
+                            <li><span>Grahics Design</span><br>Event card design, Barners, Birthday flyers and lot more.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current </span><br>UI/UX Design Training at FUTMINA.</li>
+                            <li><span>2018 -2023 </span><br>Web App Development.</li>
+                            <li><span>2015 - 2018</span><br>Design Excecutive at Coin Digital Ltd.</li>
+                            <li><span>2013 - 2015</span><br>Internship at ekark eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Student at FUTMINA</li>
+                            <li><span>2015</span><br>Studied at </li>
+                            <li><span>2012</span><br>Studied at </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Services-------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Photoshoot <i class="fa-solid fa-camera"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Cum illo rem a enim voluptatibus amet error et optio quae unde, ipsam temporibus officisis dolorum quidem id quo saepe harum placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Videography <i class="fa-solid fa-video"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Cum illo rem a enim voluptatibus amet error et optio quae unde, ipsam temporibus officisis dolorum quidem id quo saepe harum placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Graphic Design <i class="fa-solid fa-object-group"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Cum illo rem a enim voluptatibus amet error et optio quae unde, ipsam temporibus officisis dolorum quidem id quo saepe harum placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-----------portfolio------------>   
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="potrait.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Potrait</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet error placeat, repellat minus cum voluptate aut. Doloremque eum quasi quae tempore possimus. Vero consequuntur quam alias enim dolore quisquam nobis!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="indoor.jpeg" alt="work">
+                    <div class="layer">
+                        <h3>Indoorshoot</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet error placeat, repellat minus cum voluptate aut. Doloremque eum quasi quae tempore possimus. Vero consequuntur quam alias enim dolore quisquam nobis!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="wedding.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Weddingshoot</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet error placeat, repellat minus cum voluptate aut. Doloremque eum quasi quae tempore possimus. Vero consequuntur quam alias enim dolore quisquam nobis!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------Contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Steadyshotscreative@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+234 903 717 5720</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/steadyshots1?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@steadyshotscreative?_t=8qVnPqtPc6I&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/steadyshotscreative/profilecard/?igsh=enV3MHY0a2F0d2Ft"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/qr/OB2QHYV27ZQMG1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a href="Cv.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" reequired>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Steadyshot Creative. Developed by Omiachi.</p>
+        </div>
+
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+        
+        for (tablink of tablinks) {
+           
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        //Adding active link class 
+        event.currentTarget.classList.add('active-link');
+
+        //Adding active tab class
+        document.getElementById(tabname).classList.add('active-tab');
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu() {
+            sidemenu.style.right = '-50vh';
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwE6u6emf4MoNSmNtlO_Br7g7YRQPY4TL1KE_Gy_tGEqpb3GAil_SM3dB9_Qh1prfQ6/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Sucessfully!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
